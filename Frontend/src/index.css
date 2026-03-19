@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.nav-link {
+  margin-left: 40px;
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  color: #387ed1;
+}
+
+.footer-link {
+  display: block; /* 🔑 MOST IMPORTANT */
+  text-decoration: none;
+  color: #424242;
+  opacity: 0.8;
+  margin-bottom: 10px; /* use px, not % */
+}
+
+.footer-link:hover {
+  color: #387ed1;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-bottom-links a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-bottom-links a:hover {
+  color: #387ed1; /* Zerodha blue */
+}
+
+.universe-img {
+  height: 80px; /* same height for all logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.universe-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* keeps logo proportions */
+}
+
+.universe-item {
+  min-height: 220px;
+}
+
+.sensibull-logo {
+  transform: scale(2.5);
+}
+
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a {
+  color: white;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#supportHero input {
+  padding: 22px 24px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  margin: 20px 0;
+}
+
+#supportHero a {
+  color: white;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+#supportHero h1 {
+  font-weight: 500;
+}
