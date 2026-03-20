@@ -54,13 +54,16 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/login", {
-        email: formData.email.trim(),
-        password: formData.password,
-      });
+      const res = await axios.post(
+        "https://zerodha-backend-p4uk.onrender.com/login",
+        {
+          email: formData.email.trim(),
+          password: formData.password,
+        },
+      );
 
       if (res.status === 200 && res.data.token) {
-        window.location.href = `http://localhost:3001?token=${res.data.token}`;
+        window.location.href = `https://zerodha-dashboard-ot9p.onrender.com?token=${res.data.token}`;
       }
     } catch (err) {
       const backendMsg = err.response?.data?.error;
