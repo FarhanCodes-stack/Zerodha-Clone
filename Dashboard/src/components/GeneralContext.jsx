@@ -19,7 +19,7 @@ export const GeneralContextProvider = (props) => {
   const [selectedStockUID, setSelectedStockUID] = useState("");
   const [refreshCount, setRefreshCount] = useState(0);
 
-  // ✅ BUY
+  //BUY
   const handleOpenBuyWindow = (uid) => {
     setSelectedStockUID(uid);
     setIsBuyWindowOpen(true);
@@ -30,7 +30,7 @@ export const GeneralContextProvider = (props) => {
     setSelectedStockUID("");
   };
 
-  // ✅ SELL
+  //SELL
   const handleOpenSellWindow = (uid) => {
     setSelectedStockUID(uid);
     setIsSellWindowOpen(true);
@@ -41,7 +41,7 @@ export const GeneralContextProvider = (props) => {
     setSelectedStockUID("");
   };
 
-  // ✅ REFRESH — increments counter so consumers can re-fetch data
+  //REFRESH — increments counter so consumers can re-fetch data
   const handleTriggerRefresh = () => {
     setRefreshCount((prev) => prev + 1);
   };
@@ -59,10 +59,10 @@ export const GeneralContextProvider = (props) => {
     >
       {props.children}
 
-      {/* ✅ Buy Window */}
+      {/*Buy Window */}
       {isBuyWindowOpen && <BuyActionWindow uid={selectedStockUID} />}
 
-      {/* ✅ Sell Window */}
+      {/*Sell Window */}
       {isSellWindowOpen && <SellActionWindow uid={selectedStockUID} />}
     </GeneralContext.Provider>
   );

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://zerodha-backend-p4uk.onrender.com",
 });
 
 // Attach JWT token to every request
@@ -22,7 +22,7 @@ api.interceptors.response.use(
       window.location.href = "http://localhost:3000/login";
     }
     return Promise.reject(error);
-  }
+  },
 );
 
 export default api;

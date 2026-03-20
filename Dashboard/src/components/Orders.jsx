@@ -13,7 +13,7 @@ const Orders = () => {
 
   return (
     <div className="orders">
-      {/* ✅ If no orders */}
+      {/*If no orders */}
       {allOrders.length === 0 ? (
         <div className="no-orders">
           <p>You haven't placed any orders today</p>
@@ -23,7 +23,7 @@ const Orders = () => {
         </div>
       ) : (
         <>
-          {/* ✅ Orders Table */}
+          {/*Orders Table */}
           <h3 className="title">Orders ({allOrders.length})</h3>
 
           <div className="order-table">
