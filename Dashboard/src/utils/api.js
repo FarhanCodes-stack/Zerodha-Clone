@@ -19,7 +19,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       localStorage.removeItem("token");
-      window.location.href = "http://localhost:3000/login";
+      window.location.href = "https://zerodha-frontend-kl3m.onrender.com/login";
     }
     return Promise.reject(error);
   },
